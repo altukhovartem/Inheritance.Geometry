@@ -9,11 +9,17 @@ namespace Inheritance.Geometry
 	public abstract class Body
 	{
         public abstract double GetVolume();
+        public abstract void Accept(IVisitor visitor);
 	}
 
 	public class Ball : Body
 	{
 		public double Radius { get; set; }
+
+        public override void Accept(IVisitor visitor)
+        {
+            visitor.VisitBall(this);
+        }
 
         public override double GetVolume()
         {
@@ -24,6 +30,11 @@ namespace Inheritance.Geometry
 	public class Cube : Body
 	{
 		public double Size { get; set; }
+
+        public override void Accept(IVisitor visitor)
+        {
+            visitor.VisitCube(this);
+        }
 
         public override double GetVolume()
         {
@@ -36,6 +47,11 @@ namespace Inheritance.Geometry
 		public double Height { get; set; }
 		public double Radius { get; set; }
 
+        public override void Accept(IVisitor visitor)
+        {
+            visitor.VisitCyllinder(this);
+        }
+
         public override double GetVolume()
         {
             var c = this as Cyllinder;
@@ -43,13 +59,51 @@ namespace Inheritance.Geometry
         }
     }
 
-	// Заготовка класса для задачи на Visitor
-	public class SurfaceAreaVisitor
+
+    public interface IVisitor
+    {
+        void VisitBall(Ball ball);
+        void VisitCube(Cube ball);
+        void VisitCyllinder(Cyllinder cyllinder);
+    }
+
+    // Заготовка класса для задачи на Visitor
+    public class SurfaceAreaVisitor:IVisitor
 	{
 		public double SurfaceArea { get; private set; }
-	}
-	public class DimensionsVisitor
+
+        public void VisitBall(Ball ball)
+        {
+            SurfaceArea = ball.GetSurfaceArea();
+        }
+
+        public void VisitCube(Cube cube)
+        {
+            SurfaceArea = cube.GetSurfaceArea();
+        }
+
+        public void VisitCyllinder(Cyllinder cyllinder)
+        {
+            SurfaceArea = cyllinder.GetSurfaceArea();
+        }
+    }
+	public class DimensionsVisitor:IVisitor
 	{
 		public Dimensions Dimensions { get; private set; }
-	}
+
+        public void VisitBall(Ball ball)
+        {
+            Dimensions = ball.GetDimensions();
+        }
+
+        public void VisitCube(Cube cube)
+        {
+            Dimensions = cube.GetDimensions();
+        }
+
+        public void VisitCyllinder(Cyllinder cyllinder)
+        {
+            Dimensions = cyllinder.GetDimensions();
+        }
+    }
 }
