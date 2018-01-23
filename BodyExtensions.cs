@@ -12,6 +12,8 @@ namespace Inheritance.Geometry
             dynamic dynamicBody = body; 
             dynamicBody.Accept(visitor);
             return visitor.Dimensions;
+
+
         }
 
         public static double GetSurfaceArea(this Body body)

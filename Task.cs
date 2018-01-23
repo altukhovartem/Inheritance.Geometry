@@ -74,17 +74,17 @@ namespace Inheritance.Geometry
 
         public void VisitBall(Ball ball)
         {
-            SurfaceArea = ball.GetSurfaceArea();
+            SurfaceArea = Math.Pow(2*ball.Radius, 2) * Math.PI;
         }
 
         public void VisitCube(Cube cube)
         {
-            SurfaceArea = cube.GetSurfaceArea();
+            SurfaceArea = Math.Pow(cube.Size, 2) * 6;
         }
 
         public void VisitCyllinder(Cyllinder cyllinder)
         {
-            SurfaceArea = cyllinder.GetSurfaceArea();
+            SurfaceArea = 2 * Math.PI * cyllinder.Radius * (cyllinder.Height + cyllinder.Radius);
         }
     }
 	public class DimensionsVisitor:IVisitor
@@ -93,17 +93,17 @@ namespace Inheritance.Geometry
 
         public void VisitBall(Ball ball)
         {
-            Dimensions = ball.GetDimensions();
+            Dimensions = new Dimensions(ball.Radius*2, ball.Radius*2);
         }
 
         public void VisitCube(Cube cube)
         {
-            Dimensions = cube.GetDimensions();
+            Dimensions = new Dimensions(cube.Size, cube.Size);
         }
 
         public void VisitCyllinder(Cyllinder cyllinder)
         {
-            Dimensions = cyllinder.GetDimensions();
+            Dimensions = new Dimensions(cyllinder.Radius*2, cyllinder.Height);
         }
     }
 }

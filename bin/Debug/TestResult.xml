@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" name="Inheritance.Virtual.exe" fullname="C:/MyRepo/Inheritance.Geometry/bin/Debug/Inheritance.Virtual.exe" testcasecount="9" result="Passed" start-time="2018-01-23 14:55:35Z" end-time="2018-01-23 14:55:40Z" duration="5.071478" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="12" random-seed="900864789">
+  <command-line><![CDATA["C:\MyRepo\Inheritance.Geometry\bin\Debug\Inheritance.Virtual.exe" ]]></command-line>
+  <filter />
+  <test-suite type="Assembly" id="1012" name="Inheritance.Virtual.exe" fullname="C:/MyRepo/Inheritance.Geometry/bin/Debug/Inheritance.Virtual.exe" runstate="Runnable" testcasecount="9" result="Passed" start-time="2018-01-23 14:55:35Z" end-time="2018-01-23 14:55:40Z" duration="5.071478" total="9" passed="9" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="12">
+    <environment framework-version="3.6.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\MyRepo\Inheritance.Geometry\bin\Debug" machine-name="MSK-WS-120" user="aaltukhov" user-domain="INT" culture="ru-RU" uiculture="en-US" os-architecture="x86" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\MyRepo\Inheritance.Geometry\bin\Debug" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="9712" />
+      <property name="_APPDOMAIN" value="Inheritance.Virtual.exe" />
+    </properties>
+    <test-suite type="TestSuite" id="1013" name="Inheritance" fullname="Inheritance" runstate="Runnable" testcasecount="9" result="Passed" start-time="2018-01-23 14:55:35Z" end-time="2018-01-23 14:55:40Z" duration="5.036390" total="9" passed="9" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="12">
+      <test-suite type="TestSuite" id="1014" name="Geometry" fullname="Inheritance.Geometry" runstate="Runnable" testcasecount="9" result="Passed" start-time="2018-01-23 14:55:35Z" end-time="2018-01-23 14:55:40Z" duration="5.030111" total="9" passed="9" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="12">
+        <test-suite type="TestFixture" id="1000" name="Dimensions_should" fullname="Inheritance.Geometry.Dimensions_should" classname="Inheritance.Geometry.Dimensions_should" runstate="Runnable" testcasecount="3" result="Passed" start-time="2018-01-23 14:55:35Z" end-time="2018-01-23 14:55:35Z" duration="0.112120" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="6">
+          <test-case id="1001" name="BeCorrectForBall" fullname="Inheritance.Geometry.Dimensions_should.BeCorrectForBall" methodname="BeCorrectForBall" classname="Inheritance.Geometry.Dimensions_should" runstate="Runnable" seed="877949825" result="Passed" start-time="2018-01-23 14:55:35Z" end-time="2018-01-23 14:55:35Z" duration="0.076712" asserts="2" />
+          <test-case id="1002" name="BeCorrectForCube" fullname="Inheritance.Geometry.Dimensions_should.BeCorrectForCube" methodname="BeCorrectForCube" classname="Inheritance.Geometry.Dimensions_should" runstate="Runnable" seed="1091522231" result="Passed" start-time="2018-01-23 14:55:35Z" end-time="2018-01-23 14:55:35Z" duration="0.007639" asserts="2" />
+          <test-case id="1003" name="BeCorrectForCyllinder" fullname="Inheritance.Geometry.Dimensions_should.BeCorrectForCyllinder" methodname="BeCorrectForCyllinder" classname="Inheritance.Geometry.Dimensions_should" runstate="Runnable" seed="1247314893" result="Passed" start-time="2018-01-23 14:55:35Z" end-time="2018-01-23 14:55:35Z" duration="0.002421" asserts="2" />
+        </test-suite>
+        <test-suite type="TestFixture" id="1004" name="SurfaceArea_should" fullname="Inheritance.Geometry.SurfaceArea_should" classname="Inheritance.Geometry.SurfaceArea_should" runstate="Runnable" testcasecount="3" result="Passed" start-time="2018-01-23 14:55:35Z" end-time="2018-01-23 14:55:40Z" duration="4.894433" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+          <test-case id="1005" name="BeCorrectForBall" fullname="Inheritance.Geometry.SurfaceArea_should.BeCorrectForBall" methodname="BeCorrectForBall" classname="Inheritance.Geometry.SurfaceArea_should" runstate="Runnable" seed="437558622" result="Passed" start-time="2018-01-23 14:55:35Z" end-time="2018-01-23 14:55:40Z" duration="4.882857" asserts="1" />
+          <test-case id="1006" name="BeCorrectForCube" fullname="Inheritance.Geometry.SurfaceArea_should.BeCorrectForCube" methodname="BeCorrectForCube" classname="Inheritance.Geometry.SurfaceArea_should" runstate="Runnable" seed="1055668676" result="Passed" start-time="2018-01-23 14:55:40Z" end-time="2018-01-23 14:55:40Z" duration="0.000795" asserts="1" />
+          <test-case id="1007" name="BeCorrectForCyllinder" fullname="Inheritance.Geometry.SurfaceArea_should.BeCorrectForCyllinder" methodname="BeCorrectForCyllinder" classname="Inheritance.Geometry.SurfaceArea_should" runstate="Runnable" seed="630242198" result="Passed" start-time="2018-01-23 14:55:40Z" end-time="2018-01-23 14:55:40Z" duration="0.000764" asserts="1" />
+        </test-suite>
+        <test-suite type="TestFixture" id="1008" name="Volume_should" fullname="Inheritance.Geometry.Volume_should" classname="Inheritance.Geometry.Volume_should" runstate="Runnable" testcasecount="3" result="Passed" start-time="2018-01-23 14:55:40Z" end-time="2018-01-23 14:55:40Z" duration="0.009903" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+          <test-case id="1009" name="BeCorrectForBall" fullname="Inheritance.Geometry.Volume_should.BeCorrectForBall" methodname="BeCorrectForBall" classname="Inheritance.Geometry.Volume_should" runstate="Runnable" seed="1661471823" result="Passed" start-time="2018-01-23 14:55:40Z" end-time="2018-01-23 14:55:40Z" duration="0.000231" asserts="1" />
+          <test-case id="1010" name="BeCorrectForCube" fullname="Inheritance.Geometry.Volume_should.BeCorrectForCube" methodname="BeCorrectForCube" classname="Inheritance.Geometry.Volume_should" runstate="Runnable" seed="332413977" result="Passed" start-time="2018-01-23 14:55:40Z" end-time="2018-01-23 14:55:40Z" duration="0.000267" asserts="1" />
+          <test-case id="1011" name="BeCorrectForCyllinder" fullname="Inheritance.Geometry.Volume_should.BeCorrectForCyllinder" methodname="BeCorrectForCyllinder" classname="Inheritance.Geometry.Volume_should" runstate="Runnable" seed="1030183465" result="Passed" start-time="2018-01-23 14:55:40Z" end-time="2018-01-23 14:55:40Z" duration="0.000225" asserts="1" />
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
